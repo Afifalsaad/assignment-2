@@ -211,16 +211,8 @@
     position: relative;
 }
 
-.left-side-image{
-    width: 540px;
-}
-
-.left-side-image img{
-    width: 100%;
-}
 .right-side-texts{
     width: 540px;
-    height: 521px;
 }
 
 .right-side-texts h2{
@@ -243,8 +235,9 @@
 @media screen and (max-width:576px) {
     .container{
         flex-direction: column;
+        gap: 18px;
         width: 100%;
-        height: auto;
+        /* height: 100px; */
     }
 
     .badge{
@@ -258,4 +251,188 @@
     .right-side-texts{
         width: 100%;
     }
+
+    .right-side-texts h2{
+        font-size: 2rem;
+        margin-top: 0px;
+    }
+}
+
+/* Latest-deal Section styles */
+.latest-deal-texts{
+    width: 1120px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.latest-deal-images{
+    width: 1120px;
+    margin: 0 auto;
+    margin-top: 120px;
+    gap: 25px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.container-title{
+    font-size: 50px;
+    font-weight: 800;
+    margin:133px 0px 16px 0px;
+}
+
+.container-description{
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 22px;
+    width: 828px;
+    margin: auto;
+}
+
+.big{
+    position: relative;
+}
+.big img{
+    width: 730px;
+    height: 430px;
+    position: relative;
+    border-radius: 15px;
+}
+
+.text-on-img-big{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    font-size: 2rem;
+    text-align: center;
+    z-index: 1;
+}
+.overlay-3{
+    background-color: rgba(0, 0, 0, 0.667);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 15px;
+}
+
+.small-images{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.small-img-1{
+    position: relative;
+}
+
+.small-img-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.overlay-1{
+    background-color: rgba(0, 0, 0, 0.667);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 15px;
+}
+
+.text-on-img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    text-align: center;
+    z-index: 1;
+}
+
+.text-on-img a{
+    color: white;
+}
+.link-on-img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    font-size: 1.25rem;
+}
+.small-img-2{
+    position: relative;
+}
+
+.small-img-2 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.overlay-2{
+    background-color: rgba(0, 0, 0, 0.667);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 15px;
+}
+
+/* Small Devixe Responsive */
+@media screen and (max-width:576px) {
+    .latest-deal-container{
+        margin-top: 143px;
+        width: 100%;
+    }
+    .latest-deal-texts{
+        width: 100%;
+    }
+
+    .container-title{
+        margin-top: 0px;
+    }
+    .container-description{
+        width: 100%;
+        font-size: 1rem;
+    }
+    .latest-deal-images{
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .text-on-img-big{
+        font-size: 1rem;
+    }
+
+    .latest-deal-images{
+        margin-top: 40PX;
+    }
+
+    .big img{
+        width: 100%;
+        border-radius: 15px;
+    }
+
+    .overlay-3{
+        border-radius: 15px;
+    }
+
+    .small-img-1 img{
+        width: 100%;
+        border-radius: 15px;
+    }
+
+    .overlay-1{
+        border-radius: 15px;
+        width: 100%;
+    }
+
+    .small-img-2 img{
+        width: 100%;
+        border-radius: 15;
+    }
+
+    .over
 }
